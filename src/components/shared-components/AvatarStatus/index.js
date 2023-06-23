@@ -7,17 +7,17 @@ const renderAvatar = props => {
 }
 
 export const AvatarStatus = props => {
-	const { name, suffix, subTitle, id, type, src, icon, size, shape, gap, text, onNameClick } = props
+	const { name, username, suffix, subTitle, id, type, src, icon, size, shape, gap, text, onNameClick } = props
 	return (
 		<div className="avatar-status d-flex align-items-center">
-			{renderAvatar({icon, src, type, size, shape, gap, text })}
-			<div className="ml-2">
+			{/*{renderAvatar({icon, src, type, size, shape, gap, text })}*/}
+			<div>
 				<div>
 					{
 						onNameClick ? 
 						<div onClick={() => onNameClick({name, subTitle, src, id})} className="avatar-status-name clickable">{name}</div> 
 						:
-						<div className="avatar-status-name">{name}</div>
+						<div className="avatar-status-name">{name} @{username}</div>
 					}
 					<span>{suffix}</span>
 				</div>
