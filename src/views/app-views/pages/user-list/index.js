@@ -20,7 +20,7 @@ export class UserList extends Component {
 
     fetchUsers = async () => {
         this.setState({loadUsers: true});
-        await this.sleep(1000)
+        await this.sleep(1000) // TODO: delete
         const users = await (await fetch('https://jsonplaceholder.typicode.com/users')).json()
         this.setState({users: users, loadUsers: false});
     }
