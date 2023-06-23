@@ -25,6 +25,14 @@ const extraNavTree = [
             breadcrumb: true,
             submenu: []
           },
+          {
+            key: 'extra-pages-setting',
+            path: `${APP_PREFIX_PATH}/pages/setting`,
+            title: 'sidenav.pages.setting',
+            icon: '',
+            breadcrumb: true,
+            submenu: []
+          }
         ]
       }
     ]
